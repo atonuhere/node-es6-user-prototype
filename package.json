@@ -1,21 +1,21 @@
 {
   "name": "node-es6-user-prototype",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "Node ES6 JWT SEQUELIZE",
   "author": "Atonu Ganguly atonuhere@gmail.com",
-  "homepage": "https://github.com/atonuhere/",
+  "homepage": "https://github.com/atonuhere/node-es6-user-prototype",
   "license": "MIT",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
     "test": "mocha",
-    "seeddemo" "node_modules/sequelize-cli/bin/sequelize db:seed --seed `basename $(ls db/seeders/*-master-dev.js)`",
-    "seedprod" "node_modules/sequelize-cli/bin/sequelize db:seed --seed `basename $(ls db/seeders/*-master-prod.js)`"
+    "seeddemo": "node_modules/.bin/sequelize db:seed"
   },
   "dependencies": {
     "bcrypt": "^1.0.3",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
+    "cors": "^2.8.5",
     "express": "^4.16.2",
     "express-jwt": "^5.3.0",
     "express-validation": "^1.0.2",
@@ -25,8 +25,8 @@
     "nodemon": "^1.12.1",
     "sequelize": "^4.22.15",
     "sequelize-cli": "^5.4.0",
-    "uuid": "^3.1.0",
-    "cors": "^2.8.5"
+    "swagger-jsdoc": "^1.3.0",
+    "uuid": "^3.1.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",

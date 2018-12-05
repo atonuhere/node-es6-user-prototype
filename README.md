@@ -8,6 +8,7 @@
 ![](https://img.shields.io/badge/express-blue.svg)
 ![](https://img.shields.io/badge/sequelize-blue.svg)
 ![](https://img.shields.io/badge/mocha-blue.svg)
+![](https://img.shields.io/swagger/valid/2.0/:scheme/:url.svg)
 
 ## How to use this code?
 
@@ -58,13 +59,19 @@
   $ npm install
   ```
   
-5. Run the project
+5. Install NPM sequelize-cli
+
+  ```
+  $ npm install --save sequelize-cli
+  ```
+  
+6. Run the project
 
   ```
   $ node index.js
   ```
   
-6. Or use `nodemon` for live-reload
+7. Or use `nodemon` for live-reload
   
   ```
   $ npm run start
@@ -72,7 +79,7 @@
   
   > `npm start` will run `nodemon index.js`.
 
-7. Or use `seeders` for loading master data for dev or prod
+8. Or use `seeders` for loading master data for dev or prod
   
   ```
   $ npm run seeddemo
@@ -80,14 +87,15 @@
   
   > `npm seeddemo` will run `db:seed`. all files under `db/seeders` dir having filenames `*master-dev.js`  
   
-8. Navigate to `http://localhost:3001/api-status` in your browser to check you're seeing the following response
+9. Navigate to `http://localhost:3001/api-status` in your browser to check you're seeing the following response
 
   ```javascript
   { "status": "ok" }
   ```
 
   > The port can be changed by the setting the env variable `PORT` in app under config
-9. API examples are given below   
+
+10. API examples are given below   
   
   > Projects can be added by POST http://localhost:3001/api/v1/projects
   	```
@@ -107,6 +115,7 @@
 	    }
 	    ]
 	}
+	
 	```
   > Project created be viewed by GET http://localhost:3001/api/v1/projects/1
   ```
@@ -131,11 +140,12 @@
 	        }
 	    ]
 	}
+	
 	```
   > Can create Token using http://localhost:3001/auth with username & password as json request
-  > For viewing User info   http://localhost:3001/api/v1/users/1  sent headers "x-access-token"  
-
-10. If you want to execute the tests
+  > For viewing User info   http://localhost:3001/api/v1/users/1  sent headers "x-access-token"
+   
+11. If you want to execute the tests
 
 ```
 $ npm test
@@ -143,7 +153,10 @@ $ npm test
 
 > `npm test` will run `mocha`.
 
-```
+12. Swagger Api Docs
 
+```
+http://localhost:3001/swagger.json
+```
 ## Contribution
 - Reach out to me directly at <atonuhere@gmail.com>

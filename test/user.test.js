@@ -4,7 +4,7 @@ const request = require('supertest-as-promised');
 const assert = require('chai').assert;
 const jwt = require('jsonwebtoken');
 const config = require('../config/env');
-const app = require('../config/express');
+const app = require('../api/express');
 const User = require('../api/models/User');
 
 describe('User', () => {
@@ -12,7 +12,7 @@ describe('User', () => {
   let token = '';
 
   before(async () => {
-    await User.sync({ force: true });
+    await User.sync({ force: false });
     await User.create({
       username: 'Darth Vader',
       password: '1234',

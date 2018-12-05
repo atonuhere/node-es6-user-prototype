@@ -3,7 +3,7 @@ const config = require('./config/env');
 const db = require('./db/sequelize');
 
 //force: true will drop the table if it already exists
-db.sequelize.sync({force: true}).then(() => {
+db.sequelize.sync({force: false}).then(() => {
 	console.log('Resync with { force: false }');
 });
 

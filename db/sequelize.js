@@ -14,8 +14,6 @@ const sequelize = new Sequelize(config.mysql.database, config.mysql.username, co
     idle: config.mysql.pool.idle
   },
   logging: console.log,
-  seederStorage: "seeders"
-  
 });
 //sequelize.authenticate();
 
