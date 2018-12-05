@@ -143,5 +143,7 @@ $ npm test
 
 > `npm test` will run `mocha`.
 
-# Contribution
+```
+
+## Contribution
 - Reach out to me directly at <atonuhere@gmail.com>
