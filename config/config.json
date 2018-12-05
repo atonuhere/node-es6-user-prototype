@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "nodejs",
+    "password": "node@123456",
+    "database": "node_es6",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+	"username": "nodejs",
+	"password": "node@123456",
+	"database": "node_es6_test",
+	"host": "localhost",
+	"dialect": "mysql"
+  },
+  "production": {
+	"username": "nodejs",
+	"password": "node@123456",
+	"database": "node_es6_prod",
+	"host": "localhost",
+	"dialect": "mysql"
+  }
+}
