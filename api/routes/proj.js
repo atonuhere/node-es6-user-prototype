@@ -1,26 +1,8 @@
 const express = require('express');
 const config = require('../../config/env');
 const userCtrl = require('../controllers/UserController');
-const jwtVerify = require('../../middleware/JWTVerify');
 
 const router = express.Router();
-/**
- * @swagger
- * definitions:
- *   Project:
- *     properties:
- *       id:
- *         type: integer
- *		name:
- *         type: string
- *       startDate:
- *         type: string
- *       created_at:
- *         type: string
- *       updated_at:
- *         type: string
- */
-
 
 /**
  * @swagger
@@ -33,15 +15,13 @@ const router = express.Router();
  *       - application/json
  *     responses:
  *       200:
- *         description: projectId 
- *         schema:
- *           $ref: '#/definitions/String'
+ *         description: projectId
  */
 router.route('/').post(userCtrl.createProj);
 
 /**
  * @swagger
- * /api/v1/projects/{projectId}
+ * /api/v1/projects/{projectId}:
  *   get:
  *     tags:
  *       - Project
@@ -51,8 +31,6 @@ router.route('/').post(userCtrl.createProj);
  *     responses:
  *       200:
  *         description: An single object of project
- *         schema:
- *           $ref: '#/definitions/Project'
  */
 router.route('/:projectId').get(userCtrl.getProj)
 

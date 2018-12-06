@@ -79,7 +79,7 @@
   
   > `npm start` will run `nodemon index.js`.
 
-8. Or use `seeders` for loading master data for dev or prod
+8. Or use `seeders` for loading master data
   
   ```
   $ npm run seeddemo
@@ -97,9 +97,10 @@
 
 10. API examples are given below   
   
-  > Projects can be added by POST http://localhost:3001/api/v1/projects
-  	```
-  	{
+  * Projects can be added by POST http://localhost:3001/api/v1/projects
+  
+	```javascript
+	{
 	  "name" : "Project 1",
 	  "startDate": "2018-12-04 04:05:02",
 	  "users" : [
@@ -114,12 +115,12 @@
 	      "role" : "Team Member"
 	    }
 	    ]
-	}
-	
+	}	
 	```
-  > Project created be viewed by GET http://localhost:3001/api/v1/projects/1
-  ```
-	  {
+  * Project created be viewed by GET http://localhost:3001/api/v1/projects/1
+  
+  ```javascript
+  {
 	    "id": 1,
 	    "name": "Project 1",
 	    "startDate": "2018-12-03T22:35:02.000Z",
@@ -140,23 +141,22 @@
 	        }
 	    ]
 	}
-	
 	```
-  > Can create Token using http://localhost:3001/auth with username & password as json request
-  > For viewing User info   http://localhost:3001/api/v1/users/1  sent headers "x-access-token"
+  * Can create Token using http://localhost:3001/auth with username & password as json request
+  * For viewing User info   http://localhost:3001/api/v1/users/1  sent headers "x-access-token"
    
 11. If you want to execute the tests
 
-```
-$ npm test
-```
+	```
+	$ npm test
+	```
 
-> `npm test` will run `mocha`.
+	> `npm test` will run `mocha`.
 
 12. Swagger Api Docs
 
-```
-http://localhost:3001/swagger.json
-```
+	```
+	http://localhost:3001/swagger.json
+	```
 ## Contribution
 - Reach out to me directly at <atonuhere@gmail.com>
