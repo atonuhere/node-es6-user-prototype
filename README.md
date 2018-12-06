@@ -141,7 +141,8 @@
 	        }
 	    ]
 	}
-	```
+  ```
+  
   * Can create Token using http://localhost:3001/auth with username & password as json request
   * For viewing User info   http://localhost:3001/api/v1/users/1  sent headers "x-access-token"
 
