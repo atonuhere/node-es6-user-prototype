@@ -85,7 +85,7 @@
   $ npm run seeddemo
   ```
   
-  > `npm seeddemo` will run `db:seed`. all files under `db/seeders` dir having filenames `*master-dev.js`  
+  * `npm seeddemo` will run `db:seed`. all files under `db/seeders` dir having filenames `*master-dev.js`  
   
 9. Navigate to `http://localhost:3001/api-status` in your browser to check you're seeing the following response
 
@@ -93,13 +93,13 @@
   { "status": "ok" }
   ```
 
-  > The port can be changed by the setting the env variable `PORT` in app under config
+  * The port can be changed by the setting the env variable `PORT` in app under config
 
 10. API examples are given below   
   
   > Projects can be added by POST http://localhost:3001/api/v1/projects
-  	```
-  	{
+  
+	```{
 	  "name" : "Project 1",
 	  "startDate": "2018-12-04 04:05:02",
 	  "users" : [
@@ -114,12 +114,11 @@
 	      "role" : "Team Member"
 	    }
 	    ]
-	}
-	
+	}	
 	```
   > Project created be viewed by GET http://localhost:3001/api/v1/projects/1
-  ```
-	  {
+  
+  ``` {
 	    "id": 1,
 	    "name": "Project 1",
 	    "startDate": "2018-12-03T22:35:02.000Z",
@@ -140,7 +139,6 @@
 	        }
 	    ]
 	}
-	
 	```
   > Can create Token using http://localhost:3001/auth with username & password as json request
   > For viewing User info   http://localhost:3001/api/v1/users/1  sent headers "x-access-token"
