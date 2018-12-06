@@ -19,7 +19,7 @@
   $ sudo npm install -g n
   $ sudo n stable
   ```
-  
+
 2. Configure your database and jsonwebtoken in `config/env`. E.g.:
 
   ```javascript
@@ -52,53 +52,53 @@
   ```
   $ cd node-es6-user-prototype
   ```
-  
+
 4. Install NPM dependencies
 
   ```
   $ npm install
   ```
-  
+
 5. Install NPM sequelize-cli
 
   ```
   $ npm install --save sequelize-cli
   ```
-  
+
 6. Run the project
 
   ```
   $ node index.js
   ```
-  
+
 7. Or use `nodemon` for live-reload
-  
+
   ```
   $ npm run start
   ```
-  
+
   > `npm start` will run `nodemon index.js`.
 
 8. Or use `seeders` for loading master data
-  
+
   ```
   $ npm run seeddemo
   ```
-  
-  > `npm seeddemo` will run `db:seed`. all files under `db/seeders` dir having filenames `*master-dev.js`  
-  
+
+  * `npm seeddemo` will run `db:seed`. all files under `db/seeders` dir having filenames `*master-dev.js`  
+
 9. Navigate to `http://localhost:3001/api-status` in your browser to check you're seeing the following response
 
   ```javascript
   { "status": "ok" }
   ```
 
-  > The port can be changed by the setting the env variable `PORT` in app under config
+  * The port can be changed by the setting the env variable `PORT` in app under config
 
 10. API examples are given below   
-  
+
   * Projects can be added by POST http://localhost:3001/api/v1/projects
-  
+
 	```javascript
 	{
 	  "name" : "Project 1",
@@ -115,10 +115,10 @@
 	      "role" : "Team Member"
 	    }
 	    ]
-	}	
+	}
 	```
   * Project created be viewed by GET http://localhost:3001/api/v1/projects/1
-  
+
   ```javascript
   {
 	    "id": 1,
@@ -144,7 +144,7 @@
 	```
   * Can create Token using http://localhost:3001/auth with username & password as json request
   * For viewing User info   http://localhost:3001/api/v1/users/1  sent headers "x-access-token"
-   
+
 11. If you want to execute the tests
 
 	```
